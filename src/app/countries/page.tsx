@@ -39,12 +39,12 @@ export default function CountriesPage() {
     }
   };
 
-  // Fonction utilitaire pour gérer les valeurs null
+  
   const safeToString = (value: any): string => {
     return value ? value.toString().toLowerCase() : '';
   };
 
-  // Filtrer et trier les pays
+  // Filtrerr et trie les pays
   const filteredAndSortedCountries = countries
     .filter(country => {
       if (!searchTerm) return true;
@@ -86,7 +86,7 @@ export default function CountriesPage() {
         : bValue.localeCompare(aValue);
     });
 
-  // Ne rien rendre côté serveur pour éviter l'erreur d'hydratation
+  // Pas de rendu côté serveur oui
   if (!isClient) {
     return (
       <div className="min-h-screen bg-gray-50 p-8 flex items-center justify-center">
