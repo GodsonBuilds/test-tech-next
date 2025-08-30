@@ -125,8 +125,8 @@ export default function CountriesPage() {
     <div className="min-h-screen bg-gray-50 p-8">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <div className="flex justify-between items-center mb-8">
-          <div className="flex items-center gap-3">
+        <div className="flex flex-wrap  justify-between items-center mb-8">
+          <div className="flex items-center gap-3 mb-4 md:mb-0">
             <div className="">
                         <Image src="/logo-test.jpg" alt="logo" width={120} height={50} />
                         </div>
