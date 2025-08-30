@@ -8,7 +8,7 @@ import { toast, ToastContainer } from 'react-toastify';
 import Image from "next/image";
 import 'react-toastify/dist/ReactToastify.css';
 import { Button } from '@/components/ui/button';
-import { Eye, EyeOff, Building2, Globe, ChevronDown } from 'lucide-react';
+import { Eye, EyeOff, Globe, ChevronDown } from 'lucide-react';
 
 const validationSchema = Yup.object({
   email: Yup.string()

@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable react/no-unescaped-entities */
 'use client';
 
 import { useRouter } from 'next/navigation';
@@ -5,7 +7,7 @@ import { useEffect, useState } from 'react';
 import { useCountries } from '@/hooks/useCountries';
 import { Button } from '@/components/ui/button';
 import Image from "next/image";
-import { Building2, LogOut, Search, ArrowUpDown } from 'lucide-react';
+import {  LogOut, Search, ArrowUpDown } from 'lucide-react';
 
 export default function CountriesPage() {
   const router = useRouter();
